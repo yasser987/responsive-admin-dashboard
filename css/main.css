@@ -1352,7 +1352,6 @@ a {
   .plans {
     display: block;
     max-width: 100%;
-    max-width: 100%;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -1486,3 +1485,23 @@ a {
   }
 }
 /* End Keyframes */
+
+
+/* Accessibility and interaction refinements */
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--blue-color);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
+    <title>Responsive Admin Dashboard | Yasser Elbanna</title>
+    <meta
+      name="description"
+      content="A responsive multi-page admin dashboard built with semantic HTML and modern CSS."
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/framework.css" />
@@ -21,7 +25,7 @@
     <div class="page d-flex">
       <div class="sidebar bg-white p-20 p-relative">
         <h3 class="mt-0 p-relative text-c">Elbanna</h3>
-        <ul>
+        <ul aria-label="Dashboard sections">
           <li>
             <a
               class="active d-flex align-center fs-14 c-black rad-6 p-10 mb-5"
@@ -96,15 +100,16 @@
             <input
               class="p-relative rad-6 border-ddd p-10 fs-13"
               type="search"
-              placeholder="Type A Keyword"
+              placeholder="Search dashboard"
+              aria-label="Search dashboard"
             />
           </div>
           <div class="icon flex-between">
             <span class="notification p-relative">
               <i class="fa-regular fa-bell fa-lg"></i>
-              <input type="checkbox" />
+              <input type="checkbox" aria-label="Toggle notifications" />
             </span>
-            <img src="images/profile.png" alt="" />
+            <img src="images/profile.png" alt="Yasser Elbanna" />
           </div>
           <div
             class="notification-list p-absolute bg-white p-20 border-ddd rad-6"
@@ -115,7 +120,7 @@
             </div>
             <div class="body">
               <div class="not d-flex pt-10 pb-10 bord-bottom-ddd">
-                <div class="left mr-20"><img src="images/team-01.png" /></div>
+                <div class="left mr-20"><img src="images/team-01.png" alt="Yasser" /></div>
                 <div class="right">
                   <h2 class="fs-14 mb-10">Yasser</h2>
                   <p class="fs-13 mb-10">Sent You A Message</p>
@@ -123,7 +128,7 @@
                 </div>
               </div>
               <div class="not d-flex pt-10 pb-10 bord-bottom-ddd">
-                <div class="left mr-20"><img src="images/team-02.png" /></div>
+                <div class="left mr-20"><img src="images/team-02.png" alt="Ahmed" /></div>
                 <div class="right">
                   <h2 class="fs-14 mb-10">Ahmed</h2>
                   <p class="fs-13 mb-10">
@@ -133,7 +138,7 @@
                 </div>
               </div>
               <div class="not d-flex pt-10 pb-10">
-                <div class="left mr-20"><img src="images/team-05.png" /></div>
+                <div class="left mr-20"><img src="images/team-05.png" alt="Ibrahim" /></div>
                 <div class="right">
                   <h2 class="fs-14 mb-10">Ibrahim</h2>
                   <p class="fs-13 mb-10">Sent You A Message</p>
@@ -187,12 +192,14 @@
             <form class="d-flex">
               <input
                 class="input mb-20 bord-none"
-                tyep="text"
+                type="text"
                 placeholder="Title"
+                aria-label="Draft title"
               />
               <textarea
                 class="input mb-20 bord-none"
-                placeholder="Write Your Thought"
+                placeholder="Write your thought"
+                aria-label="Draft content"
               ></textarea>
               <input
                 class="btn-shape bg-blue c-white w-fit bord-none"
